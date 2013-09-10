@@ -11,7 +11,7 @@
 	<key>foldingStopMarker</key>
 	<string>\}</string>
 	<key>name</key>
-	<string>E2D Language</string>
+	<string>E2D-Script</string>
 	<key>patterns</key>
 	<array>
 		<dict>

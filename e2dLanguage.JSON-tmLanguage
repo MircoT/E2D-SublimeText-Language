@@ -1,6 +1,6 @@
 {
     "foldingStartMarker": "\\{", 
-    "name": "E2D Language", 
+    "name": "E2D-Script", 
     "scopeName": "source.e2d", 
     "patterns": [
         {
