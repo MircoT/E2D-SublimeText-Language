@@ -10,7 +10,7 @@ In the future can be added via [Package Control](http://wbond.net/sublime_packag
 
 At the moment you must clone the git repository directly inside your Sublime "Packages" directory.
 
-```git clone https://github.com/MircoT/E2D-SublimeText-Language.git "E2D-Script```
+```git clone https://github.com/MircoT/E2D-SublimeText-Language.git "E2D-Script"```
 
 This way, you'll be able to "git pull" to update the package, and Sublime will see the changes immediately. You can use the Preferences>Browse Packages menu within Sublime to get to the Packages directory.
 
