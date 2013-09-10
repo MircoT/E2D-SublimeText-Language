@@ -1,0 +1,67 @@
+{
+    "foldingStartMarker": "\\{", 
+    "name": "E2D Language", 
+    "scopeName": "source.e2d", 
+    "patterns": [
+        {
+            "name": "constant.numeric", 
+            "match": "\\b([\\+\\-\\.\\d]?[\\d]+[\\.]?[\\d]+|[\\d]+)\\b"
+        }, 
+        {
+            "begin": "//", 
+            "end": "\\Z", 
+            "name": "comment.line.double-slash"
+        }, 
+        {
+            "begin": "/\\*", 
+            "end": "\\*/", 
+            "name": "comment.block"
+        }, 
+        {
+            "begin": "\"", 
+            "end": "\"", 
+            "name": "string.quoted.double.smarty", 
+            "endCaptures": {
+                "0": {
+                    "name": "punctuation.definition.string.end.smarty"
+                }
+            }, 
+            "beginCaptures": {
+                "0": {
+                    "name": "punctuation.definition.string.begin.smarty"
+                }
+            }, 
+            "patterns": [
+                {
+                    "name": "constant.character.escape.smarty", 
+                    "match": "(\\\\n|\\\\t|\\\\r)"
+                }
+            ]
+        }, 
+        {
+            "patterns": [
+                {
+                    "name": "constant.other", 
+                    "match": "\\b([\\+\\-\\.\\d]?[\\d]+[\\.]?[\\d]+|[\\d]+)\\b"
+                }
+            ], 
+            "begin": "\\(", 
+            "end": "\\)", 
+            "name": "markup.list.unnumbered"
+        }, 
+        {
+            "begin": "\\<", 
+            "end": "\\>", 
+            "name": "support.function"
+        }, 
+        {
+            "name": "keyword.other", 
+            "match": "\\="
+        }
+    ], 
+    "foldingStopMarker": "\\}", 
+    "fileTypes": [
+        "e2d"
+    ], 
+    "uuid": "4cfb8ca5-6255-4cbb-9b9d-28db9a69fccd"
+}
